@@ -21,7 +21,7 @@ var Clock = (function () {
 	  slot.classList.remove('flip');
 	  slot.dataset.old = slot.dataset.now;
 	  slot.dataset.now = value;
-	  slot.offsetLeft; // Trigger reflow
+	  slot.offsetLeft; 
 	  slot.classList.add('flip');
 	}
   
