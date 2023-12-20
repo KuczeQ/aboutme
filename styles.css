@@ -234,6 +234,12 @@ canvas {
 }
 
 @media only screen and (max-width: 600px) {
+    
+    body {
+        overflow-x: hidden;
+        touch-action: none;
+    }
+
     .content {
         padding: 10px;
     }

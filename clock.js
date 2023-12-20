@@ -1,8 +1,16 @@
+
+
 var Clock = (function () {
 	function pad(value) {
 	  return ('0' + value).slice(-2);
 	}
-  
+
+	var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);  
+
+    if (isMobile) {
+        return;
+    }
+
 	function update(slot, value) {
 	  var now = slot.dataset.now;
   
