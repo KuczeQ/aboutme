@@ -1,5 +1,11 @@
 (function () {
     'use strict';
+    
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);  
+
+    if (isMobile) {
+        return;
+    }
 
     var canvas = document.getElementById('canvas');
     var context = canvas.getContext('2d');
