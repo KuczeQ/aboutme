@@ -234,7 +234,27 @@ canvas {
 }
 
 @media only screen and (max-width: 600px) {
-    
+
+    .clock span:before, .clock span:after {
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        color: rgb(136, 52, 233);
+        text-shadow: 0 1px 0 rgb(136, 52, 233);
+        background: rgb(136, 52, 233);
+    }
+
+    .clock:before, .clock:after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        content: ':';
+        z-index: 2;
+        line-height: 1.15;
+        color: rgb(136, 52, 233);
+    }
+
     body {
         overflow-x: hidden;
         touch-action: none;
