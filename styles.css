@@ -9,7 +9,7 @@ body {
     position: relative;
     font-family: 'San Francisco', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     justify-content: center;
-    align-items: center; /* Center the content vertically */
+    align-items: center; 
 }
 
 header {
