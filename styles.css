@@ -10,8 +10,8 @@ body {
     font-family: 'San Francisco', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     justify-content: center;
     align-items: center; 
-}
-
+  }
+  
 header {
     background-color: rgb(154, 0, 243);
     color: black;
@@ -62,7 +62,7 @@ canvas {
 .bio img {
     width: 150px;
     border-radius: 50%;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
     border: 2px solid black;
     transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -256,9 +256,13 @@ canvas {
         color: rgb(136, 52, 233);
     }
 
+    html, body {
+        height: 100%;
+        overflow: hidden;
+    }
+
     body {
-        overflow-x: hidden;
-        touch-action: none;
+        position: relative;
     }
 
     .content {
